@@ -25,15 +25,12 @@ app.use('/api/menu', menuRouter);
 app.use('/api/orders', ordersRouter);
 app.use('/api/admin', adminRouter);
 
-// In production, serve the built Vite app
-if (process.env.NODE_ENV === 'production') {
-  const distPath = join(__dirname, '..', 'dist');
-  app.use(express.static(distPath));
-  // Express 5: use app.use as catch-all instead of app.get('*')
-  app.use((req, res) => {
-    res.sendFile(join(distPath, 'index.html'));
-  });
-}
+// Always serve the built Vite app (Railway doesn't set NODE_ENV=production)
+const distPath = join(__dirname, '..', 'dist');
+app.use(express.static(distPath));
+app.use((req, res) => {
+  res.sendFile(join(distPath, 'index.html'));
+});
 
 const PORT = process.env.PORT || 3001;
 
