@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/logo.png"
+              src="/Image 1-27-26 at 4.01 PM.jpeg"
               alt="TheraDough"
               style={{ height: '36px', width: 'auto', marginBottom: '0.75rem', opacity: 0.9 }}
               onError={e => {

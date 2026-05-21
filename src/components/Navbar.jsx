@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
             <img
-              src="/logo.png"
+              src="/Image 1-27-26 at 4.01 PM.jpeg"
               alt="TheraDough Bread Co."
               style={{ height: '40px', width: 'auto', maxWidth: '140px', objectFit: 'contain' }}
               onError={e => {

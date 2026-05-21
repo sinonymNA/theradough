@@ -49,7 +49,7 @@ export default function AdminLogin() {
       <div style={{ width: '100%', maxWidth: '400px', textAlign: 'center' }}>
         {/* Logo */}
         <img
-          src="/logo.png"
+          src="/Image 1-27-26 at 4.01 PM.jpeg"
           alt="TheraDough"
           style={{ height: '48px', marginBottom: '2rem', opacity: 0.85 }}
           onError={e => {

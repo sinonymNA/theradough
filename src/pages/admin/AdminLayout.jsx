@@ -63,7 +63,7 @@ export default function AdminLayout() {
         borderBottom: '1px solid rgba(245,239,230,0.1)',
       }}>
         <img
-          src="/logo.png"
+          src="/Image 1-27-26 at 4.01 PM.jpeg"
           alt="TheraDough"
           style={{ height: '32px', opacity: 0.85, marginBottom: '0.25rem' }}
           onError={e => e.target.style.display = 'none'}
